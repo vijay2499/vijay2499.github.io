@@ -1,7 +1,7 @@
 function getData() {
     // http://api.openweathermap.org/data/2.5/weather?q=Bengaluru&appid=4e8fe55b900263c5f83603ed631e15ad
     var cityName = document.getElementById('city').value;
-    var URL = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=4e8fe55b900263c5f83603ed631e15ad';
+    var URL = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=4e8fe55b900263c5f83603ed631e15ad';
 
     fetch(URL)
         .then(res => res.json())
